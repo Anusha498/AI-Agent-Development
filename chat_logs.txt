@@ -1,0 +1,14 @@
+USER: Help me revise integration by parts for tomorrow, 45 minutes.
+INPUT_INTERPRETER -> {
+  "intent": "revise_topic",
+  "subject": "Calculus",
+  "topic_scope": "integration by parts",
+  "desired_output_type": "study_plan",
+  "urgency": "tomorrow",
+  "user_level": "undergraduate",
+  "confidence": 0.95,
+  "clarifying_question": null
+}
+STATE_TRACKER: (updated recent_subject: "Calculus", recent_topics: ["integration by parts"])
+PLANNER -> plan_steps: [ { "step_id":1, "action_type":"summary", "description":"give 10-min concept review" }, ... ]
+OUTPUT_GENERATOR -> final_message: (see sample outputs)
